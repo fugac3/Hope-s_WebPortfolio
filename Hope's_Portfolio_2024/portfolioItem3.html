@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Kerengera's Portfolio Website</title>
+    <!--makes website the same in all browsers:-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!--for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cinzel:wght@400..900&display=swap"
+        rel="stylesheet"> <!--Antic Didone-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <!--Hachi Maru Pop-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cinzel:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> <!--Urbanist-->
+
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <div class="hover-circle" id="hoverCircle"></div> <!--transparent hover circle-->
+    <header>
+        <div class="logo">
+            <img src="images/hope_font.png" alt="">
+        </div>
+        <button class="nav_toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="index.html#services" class="nav_link">My Services</a></li>
+                <li class="nav_item"><a href="index.html#about" class="nav_link">About me</a></li>
+                <li class="nav_item"><a href="index.html#work" class="nav_link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="intro">
+        <h1 class="section_heading heading--intro">
+            <strong class="auto-type">Kanban Task Management App</strong>
+        </h1>
+        <p class="section_subtitle section_subtitle--intro">HTML · CSS · JS</p>
+    </section>
+
+    <div class="portfolio_item_info">
+        <div>
+            <p>
+                The Task Management Project is a significant milestone in my JavaScript journey, serving as a bridge to
+                more
+                advanced concepts. In this project, I dealt with task management, UI updates,
+                data management, and problem-solving, laying a solid groundwork for tackling diverse programming
+                challenges.</p>
+
+            <p>"Implementing features such as task creation, updating, and deletion provided valuable insights into the
+                significance of interactive user interfaces and dynamic data handling. This project highlighted the
+                benefits of reusable components, showcasing their role in creating scalable and efficient applications."
+            </p>
+
+            <p>Completing this project not only enhanced my coding skills but also prepared me for the challenges
+                and opportunities that lie ahead in my journey towards mastering React and beyond.</p>
+            <p>Link to <a href="https://github.com/fugac3/HOPKER554_FTO2401_A2_Hope-Kerengera_JSL11.git"
+                    style="color: #4E010C; font-weight: bold">project.</a></p>
+        </div>
+
+        <img src="images/Kanban_Task_Management_pic.png" alt="">
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:k.hope.ing@gmail.com" class="footer_link">k.hope.ing@gmail.com</a>
+        <ul class="social_list">
+            <li class="social_list_item">
+                <a class="social_list_link" href="https://codepen.io">
+                    <i class="fab fa-codepen"></i>
+                    <!--code copied for brand icon-->
+                </a>
+            </li>
+            <li class="social_list_item">
+                <a class="social_list_link" href="http://dribbble.com">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </li>
+            <li class="social_list_item">
+                <a class="social_list_link" href="https://pinterest.com">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </li>
+            <li class="social_list_item">
+                <a class="social_list_link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["", "Kanban Task Management App"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+
+</body>
+
+</html>

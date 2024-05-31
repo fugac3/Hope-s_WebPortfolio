@@ -495,8 +495,8 @@ header {
 /* footer */
 
 .footer {
-    background: #111;
-    color: var(--colour-light);
+    background: var(--colour-light);
+    color: var(--colour-accent);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
