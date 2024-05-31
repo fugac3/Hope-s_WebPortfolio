@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Meta Information and Links-->
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Kerengera's Portfolio Website</title>
+    <!--makes website the same in all browsers:-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!--for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cinzel:wght@400..900&display=swap"
+        rel="stylesheet"> <!--Antic Didone-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <!--Hachi Maru Pop-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cinzel:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> <!--Urbanist-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/hope_font.png" alt="">
+        </div>
+        <button class="nav_toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="#services" class="nav_link">My Services</a></li>
+                <li class="nav_item"><a href="#about" class="nav_link">About me</a></li>
+                <li class="nav_item"><a href="#work" class="nav_link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section_heading heading--intro"> <!--class and modifier class-->
+            Hi, I am <strong>Hope Kerengera</strong>
+        </h1>
+        <p class="section_subtitle section_subtitle--intro">FULL-STACK WEB DEVELOPER</p>
+        <img src="images/Hope2.jpg" alt="A picture of Hope smiling" class="intro_img">
+    </section>
+
+
+    <!-- My services -->
+    <section class="my_services" id="services">
+        <h2 class="section_heading heading--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design + Development</h3>
+                <p>I am a full-stack web developer with my strength lying in front-end development. I am proficient in
+                    HTML5, CSS3 and JavaScript. I also make use of software such as Figma for mockups.</p>
+            </div> <!-- end of service -->
+
+            <div class="service">
+                <h3>E-Commerce</h3>
+                <p>I am educated on e-commerce and all it entails.</p>
+            </div> <!-- end of service -->
+
+            <div class="service">
+                <h3>Wix</h3>
+                <p>I have a history of working with Wix to create websites.</p>
+            </div> <!-- end of service -->
+        </div> <!-- / services -->
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about_me" id="about">
+        <h2 class="section_heading heading--about">Who I am</h2>
+        <p class="section_subtitle section_subtitle--about">Web designer & developer based in Cape Town</p>
+
+        <div class="about_me_body">
+            <p>My name is Patience Hope Kerengera, everyone refers to me as Hope though. I was born and raised in Cape
+                Town and have recently graduated from UCT with a BCom Information Systems degree. My whole life I have
+                always been interested in art, design and anything creative if I am being honest, and that is why I have
+                decided to become a web developer as it allows me to combine my passion for design while also
+                challenging my problem-solving skills.</p>
+        </div>
+
+        <img src="images/hope_art.jpg" alt="" class="image_about_me">
+    </section>
+
+    <!-- My Work -->
+    <section class="my_work" id="work">
+        <h2 class="section_heading">My work</h2>
+        <p class="section_subtitle"></p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="/portfolio_item.html" class="portfolio_item">
+                <img src="images/dev.jpg" alt="" class="portfolio_img">
+            </a>
+
+            <!-- Portfolio item 02 -->
+            <a href="/portfolio_item.html" class="portfolio_item">
+                <img src="images/blender_house.jpg" alt="" class="portfolio_img">
+            </a>
+
+            <!-- Portfolio item 03 -->
+            <a href="/portfolio_item.html" class="portfolio_item">
+                <img src="images/webdes.jpg" alt="" class="portfolio_img">
+            </a>
+
+            <!-- Portfolio item 04 -->
+            <a href="/portfolio_item.html" class="portfolio_item">
+                <img src="images/webdev.jpg" alt="" class="portfolio_img">
+            </a>
+
+            <!-- Portfolio item 05 -->
+            <a href="/portfolio_item.html" class="portfolio_item">
+                <img src="images/stardew_valley.jpg" alt="" class="portfolio_img">
+            </a>
+
+            <!-- Portfolio item 06 -->
+            <a href="/portfolio_item.html" class="portfolio_item">
+                <img src="images/moodboard.jpg" alt="" class="portfolio_img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:k.hope.ing@gmail.com" class="footer_link">k.hope.ing@gmail.com</a>
+        <ul class="social_list">
+            <li class="social_list_item">
+                <a class="social_list_link" href="https://codepen.io/Hope-K-the-sasster">
+                    <i class="fab fa-codepen"></i>
+                    <!--code copied for brand icon-->
+                </a>
+            </li>
+            <li class="social_list_item">
+                <a class="social_list_link" href="http://dribbble.com">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </li>
+            <li class="social_list_item">
+                <a class="social_list_link" href="https://pin.it/7d1Fg4hlp">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </li>
+            <li class="social_list_item">
+                <a class="social_list_link" href="https://github.com/fugac3">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
