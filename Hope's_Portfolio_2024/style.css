@@ -87,7 +87,7 @@ strong {
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background: #65010ec3;
+    background: var(--colour-dark);
     color: var(--colour-light);
     text-decoration: none;
     /*remove hyperlink underline*/
@@ -356,8 +356,8 @@ header {
 /*  My services section  */
 
 .my_services {
-    background-color: #65010F;
-    background-image: url(images/background.jpg);
+    background-color: #4E010C;
+    background-image: url(https://i.pinimg.com/564x/f9/b7/31/f9b731ca72c4a948fa53f78c0fab1bd1.jpg);
     background-size: cover;
     /*so it doesn't repeat*/
     background-blend-mode: multiply;
@@ -496,7 +496,7 @@ header {
 
 .footer {
     background: #111;
-    color: var(--colour-accent);
+    color: var(--colour-light);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
