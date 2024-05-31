@@ -1,34 +1,42 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box; /*make all box elements part of width and height*/
+    box-sizing: border-box;
+    /*make all box elements part of width and height*/
 }
 
 /* Custom Properties */
 
-:root { /*defining CSS variables that will be used throughout*/
-    --ff-primary: 'Urbanist', sans-serif; /*ff = font-family*/
+:root {
+    /*defining CSS variables that will be used throughout*/
+    --ff-primary: 'Urbanist', sans-serif;
+    /*ff = font-family*/
     --ff-secondary: 'Antic Didone', monospace;
-    
-    --fw-reg: 300; /*fw = font-width regular*/
+
+    --fw-reg: 300;
+    /*fw = font-width regular*/
     --fw-bold: 900;
-    
+
     --colour-light: #FCFCF7;
     --colour-dark: #303030;
     --colour-accent: #C5B436;
-    
-    --fs-h1: 3rem; /*fs = font-size*/
+
+    --fs-h1: 3rem;
+    /*fs = font-size*/
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
-    
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), /*box-shadow: left, right, blur, shadow*/
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        /*box-shadow: left, right, blur, shadow*/
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
-@media (min-width: 800px) { /*these styles applied if width more than 800px*/
+@media (min-width: 800px) {
+
+    /*these styles applied if width more than 800px*/
     :root {
-        --fs-h1: 4.5rem; 
+        --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
@@ -47,23 +55,29 @@ body {
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
-    line-height: 1.6; /*space between lines*/
+    line-height: 1.6;
+    /*space between lines*/
 }
 
 section {
-    padding: 5em 2em; /*create padding around sections*/
+    padding: 5em 2em;
+    /*create padding around sections*/
 }
 
 img {
-    display: block; /*take up full width of containing element*/
+    display: block;
+    /*take up full width of containing element*/
     max-width: 100%;
 }
 
-strong { font-weight: var(--fw-bold) }
+strong {
+    font-weight: var(--fw-bold)
+}
 
 :focus {
     outline: 3px solid var(--colour-accent);
-    outline-offset: 3px; /*outline 3px away from border*/
+    outline-offset: 3px;
+    /*outline 3px away from border*/
 }
 
 /* Buttons */
@@ -73,7 +87,8 @@ strong { font-weight: var(--fw-bold) }
     padding: .5em 2.5em;
     background: var(--colour-accent);
     color: var(--colour-dark);
-    text-decoration: none; /*remove hyperlink underline*/
+    text-decoration: none;
+    /*remove hyperlink underline*/
     cursor: pointer;
     font-size: .8rem;
     text-transform: uppercase;
@@ -83,22 +98,35 @@ strong { font-weight: var(--fw-bold) }
 }
 
 .btn:hover {
-    transform: scale(1.1); /*growth transition*/
+    transform: scale(1.1);
+    /*growth transition*/
 }
 
 /* Typography */
 
-h1, h2, h3 { /*smaller line height between heading lines*/
+h1,
+h2,
+h3 {
+    /*smaller line height between heading lines*/
     line-height: 1;
     margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
+h1 {
+    font-size: var(--fs-h1)
+}
+
+h2 {
+    font-size: var(--fs-h2)
+}
+
+h3 {
+    font-size: var(--fs-h3)
+}
 
 .section_heading {
-    margin-bottom: 0.25em; /*space beneath h1*/
+    margin-bottom: 0.25em;
+    /*space beneath h1*/
 }
 
 .heading--intro {
@@ -106,7 +134,8 @@ h3 { font-size: var(--fs-h3) }
     font-family: 'Antic Didone'
 }
 
-.heading--intro strong { /*to put my name on a new line*/
+.heading--intro strong {
+    /*to put my name on a new line*/
     display: block;
 }
 
@@ -121,15 +150,17 @@ h3 { font-size: var(--fs-h3) }
     font-family: var(--ff-secondary);
     color: var(--colour-light);
     padding-left: .5em;
-    margin-bottom: 1em; /*creating space beneath subtitle and image*/
-    
+    margin-bottom: 1em;
+    /*creating space beneath subtitle and image*/
+
 }
 
 /* header */
 
 header {
     display: flex;
-    justify-content: space-between; /*creating space between logo and burger menu*/
+    justify-content: space-between;
+    /*creating space between logo and burger menu*/
     padding: 1em;
 }
 
@@ -138,32 +169,39 @@ header {
 }
 
 .nav {
-    position: fixed; /*nav menu not affected by flex, stays in same position*/
+    position: fixed;
+    /*nav menu not affected by flex, stays in same position*/
     background: var(--colour-dark);
     color: var(--colour-light);
-    top: 0; /*makes it fill the whole page*/
+    top: 0;
+    /*makes it fill the whole page*/
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100; /*puts the nav menu in the front*/
-    
+    z-index: 100;
+    /*puts the nav menu in the front*/
+
     transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1); /*setting the way it transitions*/
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    /*setting the way it transitions*/
 }
 
 .nav_list {
-    list-style: none; /*removes bullet points*/
-    display: flex; 
+    list-style: none;
+    /*removes bullet points*/
+    display: flex;
     height: 100%;
-    flex-direction: column; /*from row to list again*/
-    justify-content: space-evenly; 
+    flex-direction: column;
+    /*from row to list again*/
+    justify-content: space-evenly;
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
 .nav_link {
-    color: inherit; /*takes colour from nav*/
+    color: inherit;
+    /*takes colour from nav*/
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
@@ -175,29 +213,37 @@ header {
 
 .nav_toggle {
     padding: .5em;
-    background: transparent; /*button background disappears*/
+    background: transparent;
+    /*button background disappears*/
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 1em; /*moves it close to the right side of screen*/
-    top: 1em; /*bit below the top*/
-    z-index: 1000; /*put in front of nav menu*/
+    right: 1em;
+    /*moves it close to the right side of screen*/
+    top: 1em;
+    /*bit below the top*/
+    z-index: 1000;
+    /*put in front of nav menu*/
 }
 
 .nav_open .nav {
-    transform: translateX(0); /*when hamburger pressed, nav menu slides in completely*/
+    transform: translateX(0);
+    /*when hamburger pressed, nav menu slides in completely*/
 }
 
 .nav_open .nav-toggle {
-    position: fixed; /*hamburger remains in the same position, does not disappear*/
+    position: fixed;
+    /*hamburger remains in the same position, does not disappear*/
 }
 
 .nav_open .hamburger {
-    transform: rotate(.625turn); /*rotates to create one side of X*/
+    transform: rotate(.625turn);
+    /*rotates to create one side of X*/
 }
 
 .nav_open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px); /*continues to rotate to create other side of "X"*/
+    transform: rotate(90deg) translateX(-6px);
+    /*continues to rotate to create other side of "X"*/
 }
 
 .nav_open .hamburger::after {
@@ -213,7 +259,8 @@ header {
 .hamburger::before,
 .hamburger::after {
     background: var(--colour-accent);
-    width: 1.6em; /*create the hamburger lines*/
+    width: 1.6em;
+    /*create the hamburger lines*/
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
@@ -228,8 +275,14 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 6px; } /*distance from og span*/
-.hamburger::after { bottom: 6px; }
+.hamburger::before {
+    top: 6px;
+}
+
+/*distance from og span*/
+.hamburger::after {
+    bottom: 6px;
+}
 
 
 /*  Intro section  */
@@ -242,25 +295,30 @@ header {
     box-shadow: var(--bs);
 }
 
-@media (min-width: 600px) { /*for screens between 600 and 800px*/
+@media (min-width: 600px) {
+
+    /*for screens between 600 and 800px*/
     .intro {
         display: grid;
         width: min-content;
-        margin: 0 auto; /*place in center horizontally*/
+        margin: 0 auto;
+        /*place in center horizontally*/
         grid-column-gap: 1em;
-        grid-template-areas: 
+        grid-template-areas:
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
     }
-    
+
     .intro_img {
         grid-area: img;
         min-width: 250px;
-        position: relative; /*place image in front*/
-        z-index: 2; /*make sure image is in front*/
-    }    
-    
+        position: relative;
+        /*place image in front*/
+        z-index: 2;
+        /*make sure image is in front*/
+    }
+
     .section_subtitle--intro {
         align-self: start;
         grid-column: -1 / 1;
@@ -268,7 +326,8 @@ header {
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: calc(100% + 1.5em); /*make longer*/
+        width: calc(100% + 1.5em);
+        /*make longer*/
         padding-right: 1em;
     }
 }
@@ -278,8 +337,10 @@ header {
 .my_services {
     background-color: var(--colour-dark);
     background-image: url(images/background.jpg);
-    background-size: cover; /*so it doesn't repeat*/
-    background-blend-mode: multiply; /*makes background darker*/
+    background-size: cover;
+    /*so it doesn't repeat*/
+    background-blend-mode: multiply;
+    /*makes background darker*/
     color: var(--colour-light);
     text-align: center;
 }
@@ -290,17 +351,21 @@ header {
 }
 
 .heading--services::after {
-    content: ''; /*just necessary for ::after to work*/
-    display: block; /*put on new line*/
+    content: '';
+    /*just necessary for ::after to work*/
+    display: block;
+    /*put on new line*/
     width: 2em;
-    height: 1px; /*creates the line - soo basically creating a thin box with w and h that looks like a line*/
+    height: 1px;
+    /*creates the line - soo basically creating a thin box with w and h that looks like a line*/
     margin: 0.5em auto 1em;
     background: var(--colour-light);
     opacity: 0.25;
 }
 
 .services {
-    margin-bottom: 4em; /*creates space between service section and button*/
+    margin-bottom: 4em;
+    /*creates space between service section and button*/
 }
 
 .service {
@@ -310,14 +375,17 @@ header {
 
 @media (min-width: 800px) {
     .services {
-        display: flex; /*puts services into 3 columns (because 3 services)*/
-        max-width: 1000px; /*words stop taking space/stretching after 1000px*/
+        display: flex;
+        /*puts services into 3 columns (because 3 services)*/
+        max-width: 1000px;
+        /*words stop taking space/stretching after 1000px*/
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .service + .service {
-        margin-left: 2em; /*add space to left side of service*/
+
+    .service+.service {
+        margin-left: 2em;
+        /*add space to left side of service*/
     }
 }
 
@@ -334,17 +402,17 @@ header {
     .about_me {
         display: grid;
         grid-template-columns: 1fr 200px;
-        grid-template-areas: 
+        grid-template-areas:
             "title img"
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
     }
-    
+
     .heading--about {
         grid-area: title;
     }
-    
+
     .section_subtitle--about {
         grid-column: 1 / -1;
         grid-row: 2;
@@ -354,7 +422,7 @@ header {
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
-    
+
     .image_about_me {
         grid-area: img;
         position: relative;
@@ -367,30 +435,37 @@ header {
 .my_work {
     background-color: var(--colour-dark);
     color: var(--colour-light);
-    text-align: center;    
+    text-align: center;
 }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*as many items that can fit properly in the row (300px) are show*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*as many items that can fit properly in the row (300px) are show*/
 }
 
 .portfolio_item {
     background: var(--colour-accent);
-    overflow: hidden; /*parts that don't fit are not shown*/
-    height: 350px; /*give square shape*/
+    overflow: hidden;
+    /*parts that don't fit are not shown*/
+    height: 350px;
+    /*give square shape*/
 }
 
 .portfolio_img {
-    width: 100%; /*take full width of parent item*/
+    width: 100%;
+    /*take full width of parent item*/
     height: 100%;
-    object-fit: cover; /*make image cover the whole container*/
-    transition: /*specifying the length of transformation, style of it (basically ease-in-out) and opacity*/
+    object-fit: cover;
+    /*make image cover the whole container*/
+    transition:
+        /*specifying the length of transformation, style of it (basically ease-in-out) and opacity*/
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
 
-.portfolio_img:hover {/*hover style*/
+.portfolio_img:hover {
+    /*hover style*/
     transform: scale(1.2);
     opacity: .5;
 }
@@ -406,8 +481,9 @@ header {
 
 }
 
-.footer a { 
-    color: inherit; /*gets the same colour as footer*/
+.footer a {
+    color: inherit;
+    /*gets the same colour as footer*/
     text-decoration: none;
 }
 
@@ -416,17 +492,20 @@ header {
 }
 
 .footer_link:hover,
-.social_list_link:hover { /*becomes slightly transparent*/
+.social_list_link:hover {
+    /*becomes slightly transparent*/
     opacity: .7;
 }
 
 .footer_link:hover {
-    text-decoration: underline; /*email is underlined when hovered*/
+    text-decoration: underline;
+    /*email is underlined when hovered*/
 }
 
 .social_list {
     list-style: none;
-    display: flex; /*puts the list in a row*/
+    display: flex;
+    /*puts the list in a row*/
     justify-content: center;
     margin: 2em 0 0;
     padding: 0;
