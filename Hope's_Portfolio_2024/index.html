@@ -33,6 +33,7 @@
 </head>
 
 <body>
+    <div class="hover-circle" id="hoverCircle"></div> <!--transparent hover circle-->
     <header>
         <div class="logo">
             <img src="images/hope_font.png" alt="">
@@ -51,13 +52,15 @@
     </header>
 
     <!-- Introduction -->
-    <section class="intro" id="home">
-        <h1 class="section_heading heading--intro"> <!--class and modifier class-->
-            Hi, I am <strong>Hope Kerengera</strong>
-        </h1>
-        <p class="section_subtitle section_subtitle--intro">FULL-STACK WEB DEVELOPER</p>
-        <img src="images/Hope2.jpg" alt="A picture of Hope smiling" class="intro_img">
-    </section>
+    <div class="intro-section">
+        <section class="intro" id="home">
+            <h1 class="section_heading heading--intro"> <!--class and modifier class-->
+                Hi, I am <strong class="auto-type">Hope Kerengera</strong>
+            </h1>
+            <p class="section_subtitle section_subtitle--intro">FULL-STACK WEB DEVELOPER</p>
+            <img src="images/Hope2.jpg" alt="A picture of Hope smiling" class="intro_img">
+        </section>
+    </div>
 
 
     <!-- My services -->
@@ -167,7 +170,16 @@
     </footer>
 
     <script src="index.js"></script>
-
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Hope Kerengera", "a Web Developer", "a Designer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>
